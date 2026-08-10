@@ -98,7 +98,7 @@ export default function Home() {
         <h1 className="title">
           tasty nom noms. 
         </h1>
-        <h2>App is made so that bubba doesn't have to overthink.</h2>
+        <h2>App is made so that you don't have to overthink.</h2>
         <p className="lede">
           Now u can search thousands of recipes by name or you cud also browse by category. They also have some indian recipes!
         </p>

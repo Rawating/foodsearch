@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
 
 export const metadata = {
-  title: "Bubba's pantry",
-  description: "App is made so that bubba doesn't have to overthink.",
+  title: "Pantry",
+  description: "App is made so that no one has to overthink.",
 };
 
 export default function RootLayout({ children }) {
