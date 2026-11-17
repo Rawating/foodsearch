@@ -5,7 +5,7 @@ import { useState } from "react";
 const AI_ENABLED = process.env.NEXT_PUBLIC_AI_ENABLED === "true";
 
 // Renders nothing unless AI is switched on, so the detail page is unaffected
-// when Gemini isn't configured.
+// when Grok isn't configured.
 export default function AskAi({ recipe }) {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
