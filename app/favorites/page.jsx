@@ -11,9 +11,9 @@ export default function FavoritesPage() {
     <div className="shell">
       <header className="masthead">
         <p className="eyebrow">Saved recipes</p>
-        <h1 className="title">Your hearted list.</h1>
+        <h1 className="title">Your saved recipes</h1>
         <p className="lede">
-          Everything you've hearted, saved right here.
+          Recipes you have saved are listed here.
         </p>
         <Link href="/" className="back" style={{ margin: "18px 0 0" }}>
           ← Back to search
@@ -29,7 +29,7 @@ export default function FavoritesPage() {
         </>
       ) : (
         <div className="empty" style={{ marginTop: 26 }}>
-          You haven't saved anything yet... tap the ♡ on any recipe to add it here.
+          You have not saved any recipes yet. Select the heart icon on a recipe to save it here.
         </div>
       )}
     </div>

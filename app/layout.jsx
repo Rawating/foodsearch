@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FavoritesProvider } from "@/components/FavoritesProvider";
 
 export const metadata = {
-  title: "Pantry",
-  description: "App is made so that no one has to overthink.",
+  title: "PantryUp",
+  description: "Find recipes based on the ingredients you have or browse by category.",
 };
 
 export default function RootLayout({ children }) {

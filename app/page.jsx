@@ -94,20 +94,18 @@ export default function Home() {
   return (
     <div className="shell">
       <header className="masthead">
-        <p className="eyebrow">Recipe search</p>
-        <h1 className="title">
-          tasty nom noms. 
-        </h1>
-        <h2>App is made so that you don't have to overthink.</h2>
+        <p className="eyebrow">PantryUp recipe finder</p>
+        <h1 className="title">Discover your next meal.</h1>
+        <h2>Find recipes with the ingredients you have.</h2>
         <p className="lede">
-          Now u can search thousands of recipes by name or you cud also browse by category. They also have some indian recipes!
+          Search thousands of recipes by name or browse by category, including Indian dishes.
         </p>
 
         <form className="searchbar" onSubmit={runSearch}>
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Try “chicken” or “paneer”???…"
+            placeholder="Try “chicken” or “paneer”…"
             aria-label="Search recipes by name"
           />
           <button className="btn" type="submit" disabled={loading}>
@@ -130,11 +128,11 @@ export default function Home() {
 
         {AI_ENABLED && (
           <div className="ai-assist">
-            <p className="eyebrow"><b>A</b>yush<b>I</b> search</p>
+            <p className="eyebrow">AI-powered recipe search</p>
             <textarea
               value={aiText}
               onChange={(e) => setAiText(e.target.value)}
-              placeholder='List what you have. You can list ingridients, like "i wanna make something with lettuce and sour cream"'
+              placeholder='Enter the ingredients you have, such as "lettuce and sour cream."'
             />
             <button
               className="btn"
@@ -154,7 +152,7 @@ export default function Home() {
         <RecipeGrid recipes={recipes} />
       ) : (
         !loading && (
-          <div className="empty">Nothing to show yet. You gotta search something up first brev</div>
+          <div className="empty">No recipes to display yet. Search for a recipe or select a category to get started.</div>
         )
       )}
     </div>
